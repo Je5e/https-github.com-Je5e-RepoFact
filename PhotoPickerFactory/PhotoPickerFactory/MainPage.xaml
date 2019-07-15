@@ -3,12 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PhotoPickerFactory"
              x:Class="PhotoPickerFactory.MainPage">
-
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+        <Button Text="Select Photo" Clicked="Handle_Clicked"/>
+        <Image x:Name="imgPhoto"/>
 
+    </StackLayout>
+   
 </ContentPage>

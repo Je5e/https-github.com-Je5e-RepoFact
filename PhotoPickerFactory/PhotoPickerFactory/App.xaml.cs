@@ -7,6 +7,7 @@ namespace PhotoPickerFactory
 {
     public partial class App : Application
     {
+     
         public App()
         {
             InitializeComponent();
