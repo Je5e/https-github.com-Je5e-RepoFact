@@ -17,7 +17,14 @@ namespace PhotoPickerFactory
 
         async void Handle_Clicked(object sender, EventArgs e)
         {
+            IPhotoPickerService photoPicker = App.Factory.Create();
 
+            Stream stream = await photoPicker.GetImageStreamAsync();
+            if (stream!=null)
+            {
+                imgPhoto.Source = ImageSource.FromStream(() => stream);
+            }
+          
         }
     }
 }

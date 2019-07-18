@@ -52,7 +52,7 @@ namespace PhotoPickerFactory.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
-            App.Factory = new PhotoPickerFactory();
+            App.Factory = new PhotoPickerFactory_Android();
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

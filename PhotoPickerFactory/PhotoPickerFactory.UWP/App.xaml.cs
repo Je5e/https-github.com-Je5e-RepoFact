@@ -41,6 +41,7 @@ namespace PhotoPickerFactory.UWP
                 rootFrame = new Frame();
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
+
                 PhotoPickerFactory.App.Factory = new PhotoPickerFactory_UWP();
                 Xamarin.Forms.Forms.Init(e);
                 
